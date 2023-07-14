@@ -16,6 +16,6 @@ export default function LooneyLoop(props:Props) {
     const style = {left : pct+"%", top : pct+"%", right : pct+"%", bottom : pct+"%", animationDelay : animationDelay+"ms"}
 
     return <div className={"loony-loop animateBounce"} style={style}  >
-        <img src="/LooneyLoop.png" alt=""/>
+        <img src='/LooneyLoop.png' alt=""/>
     </div>
 }

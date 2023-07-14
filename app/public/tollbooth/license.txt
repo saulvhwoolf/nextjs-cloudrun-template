@@ -1,0 +1,11 @@
+Model Information:
+* title:	finalized
+* source:	https://sketchfab.com/3d-models/finalized-fba4a29d55a04de29f32bf922b528fe3
+* author:	saulvhwoolf (https://sketchfab.com/saulvhwoolf)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "finalized" (https://sketchfab.com/3d-models/finalized-fba4a29d55a04de29f32bf922b528fe3) by saulvhwoolf (https://sketchfab.com/saulvhwoolf) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
