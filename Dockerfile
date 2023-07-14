@@ -12,6 +12,13 @@ COPY . .
 COPY --from=dependencies /app/node_modules ./node_modules
 RUN npm run build
 
+
+# add public
+FROM node:18-alpine AS public
+WORKDIR /
+COPY /public /public
+
+
 # Production image, copy all the files and run next
 FROM node:18-alpine AS runner
 WORKDIR /app
@@ -24,7 +31,7 @@ RUN adduser -S nextjs -u 1001
 COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
-COPY ../public /public
+COPY --from=public /public /public
 
 USER nextjs
 EXPOSE 3000
