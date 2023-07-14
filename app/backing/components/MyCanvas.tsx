@@ -2,6 +2,7 @@ import {Canvas, useFrame} from "@react-three/fiber";
 import Box from "@/app/backing/components/Box";
 import {Suspense, useRef} from "react";
 import {TollBooth} from "@/app/backing/components/Tollbooth";
+import {Tollbooth2} from "@/app/backing/components/Tollbooth_v2";
 
 export default function MyCanvas() {
 
@@ -13,7 +14,8 @@ export default function MyCanvas() {
                 <pointLight position={[10, 10, 10]} />
                 {/*<Contraption/>*/}
                 <Suspense>
-                    <TollBooth></TollBooth>
+                    {/*<TollBooth></TollBooth>*/}
+                    <Tollbooth2></Tollbooth2>
                 </Suspense>
             </Canvas>
         </div>
