@@ -1,7 +1,6 @@
 import {Canvas, useFrame} from "@react-three/fiber";
 import Box from "@/app/backing/components/Box";
 import {Suspense, useRef} from "react";
-import Contraption from "@/app/backing/components/Contraption";
 import {TollBooth} from "@/app/backing/components/Tollbooth";
 
 export default function MyCanvas() {
