@@ -1,5 +1,5 @@
 {
-  "name": "NextJS Cloud Run Template App",
+  "name": "3Dundrian",
   "options": {
     "allow-unauthenticated": true,
     "memory": "256Mi",
