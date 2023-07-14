@@ -10,9 +10,17 @@ Title: finalized
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import {useFrame} from "@react-three/fiber";
+import {DRACOLoader} from "three/examples/jsm/loaders/DRACOLoader";
 
 export function TollBooth(props) {
-  const { nodes, materials } = useGLTF('/tollbooth/scene.gltf')
+  const { nodes, materials } = useGLTF('/tollbooth/scene.gltf', true)
+
+  // const loader = new GLTFLoader()
+
+  // const dLoader = new DRACOLoader();
+  // dLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.6/');
+  // dLoader.setDecoderConfig({type:'js'})
+  // gltf
 
   const groupRef = useRef(null)
   useFrame((state, delta) => {
@@ -21,7 +29,7 @@ export function TollBooth(props) {
   })
   return (
     <group {...props} dispose={null}>
-      <group ref={groupRef} rotation={[-Math.PI / 2, 0, 0]} scale={[30,30,30]} position={[0,-5,0]}>
+      <group ref={groupRef} rotation={[-Math.PI / 2, 0, 0]} scale={[30,30,30]}>
         <mesh geometry={nodes.model_tex_u1_v1_0.geometry} material={materials.tex_u1_v1} />
         <mesh geometry={nodes.model_tex_u1_v1_0_1.geometry} material={materials.tex_u1_v1} />
         <mesh geometry={nodes.model_tex_u1_v1_0_2.geometry} material={materials.tex_u1_v1} />

@@ -7,7 +7,7 @@ export default function MyCanvas() {
 
     return <>
         <div className={"scene"}>
-            <Canvas shadows className={"scene"} camera={{position: [-6, 7, 7],}}>
+            <Canvas shadows className={"scene"} camera={{position: [-15, 15, 0],}}>
                 {/*<color attach="background" args={["rgba(0,0,0,0)"]} />*/}
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
